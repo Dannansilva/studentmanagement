@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:studentmanagement/screens/add_students_screen.dart';
+import 'package:studentmanagement/screens/home_screen.dart';
 import 'screens/student_list_screen.dart';
 import 'services/student_service.dart';
 
@@ -68,7 +69,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: StudentListScreen(studentService: studentService),
+      home: HomeScreen(),
       routes: {
         '/add':
             (context) => AddStudentScreen(
